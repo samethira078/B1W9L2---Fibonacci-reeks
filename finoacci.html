@@ -1,0 +1,54 @@
+<!--
+a = 0;
+b = 1;
+c = 1;
+
+a + b = 1;
+a = 1;
+antwoord = a + b / 1 + 1 = 2;
+
+
+b = a = 1;
+a = antwoord = 2;
+antwoord = a + b / 1 + 2 = 3;
+
+b = a = 2;
+a = antwoord = 3;
+antwoord = a + b / 2 + 3 = 5;
+
+b = a = 3;
+a = antwoord = 5;
+antwoord = a + b / 3 + 5 = 8;
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function finoacci(hoevaak){
+			var a = 0;
+			var b = 1;
+			var antwoord = 1;
+			document.write("1 <br> 1 <br>");
+			for(let i=1; i < hoevaak; i++){
+			document.write(antwoord + "<br>");
+			antwoord = a + b;
+			b = a;
+			a = antwoord;
+		}
+	}
+		finoacci(20);
+	</script>
+</body>
+</html>
+
+
+
+
